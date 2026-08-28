@@ -1,5 +1,23 @@
+/**************************************************************************
+ REPLICATION RUN INSTRUCTIONS
+
+ Set Stata's working directory to the folder containing this do-file and
+ the four descriptive input files, then run the do-file from top to bottom.
+
+ Required input files in the same folder:
+   - P_Institutional Quality.xlsx
+   - soveriegn.xlsx
+   - world-regions-according-to-the-world-bank.csv
+   - gdp.xlsx
+
+ Required user-written Stata command:
+   - texsave
+
+ No analytical commands, parameter values, sample definitions, or variable
+ transformations have been changed from the authors' original file.
+**************************************************************************/
+
 clear 
-cd "/Users/brendanbrundage/Library/CloudStorage/OneDrive-MorehouseCollege/Desktop/Research/BrundageDarityTavani"
 
 import excel using "P_Institutional Quality", firstrow
 drop TimeCode
